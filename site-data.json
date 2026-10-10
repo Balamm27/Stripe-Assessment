@@ -1,0 +1,50 @@
+{
+  "titles": [
+    "AI Powered Agent",
+    "What you\u2019ll see in this walkthrough",
+    "From analyst queue to guided payment investigations",
+    "How It Works",
+    "AI Powered Agent architecture",
+    "Working demo",
+    "Key Features",
+    "Impact & Value Proposition",
+    "How the agent investigates the metric gap",
+    "Adaptive Auth: the explanation Claude never received",
+    "How I fixed the Adaptive Auth retrieval failure",
+    "A wrong-year answer changed the prompt and SQL rule",
+    "A 1,000-character limit hid the schema the agent needed",
+    "Test Coverage Matrix",
+    "Usage and reliability",
+    "Making the architecture reusable",
+    "What I\u2019d bring to Stripe Finance"
+  ],
+  "chapters": [
+    "Introduction",
+    "Introduction",
+    "The workflow",
+    "The experience",
+    "The build",
+    "Working demo",
+    "The experience",
+    "The value",
+    "The build",
+    "What failed",
+    "What changed",
+    "What changed",
+    "What changed",
+    "Validation",
+    "Observed usage",
+    "Reusable design",
+    "Closing"
+  ],
+  "appendix": [
+    "Two skills make setup reusable",
+    "Reuse across Expedia",
+    "Analytical scope and example investigations",
+    "Two execution paths",
+    "Inside the investigative tool loop",
+    "Controls around the agent",
+    "How feedback becomes reusable knowledge",
+    "Reference: a defined calculation"
+  ]
+}
