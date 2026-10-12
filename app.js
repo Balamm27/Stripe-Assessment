@@ -2,8 +2,6 @@ const progress = document.querySelector('.scroll-progress span');
 const header = document.querySelector('.site-header');
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-header nav');
-const dialog = document.querySelector('#slide-dialog');
-const dialogImage = dialog.querySelector('img');
 
 function updateProgress() {
   const max = document.documentElement.scrollHeight - window.innerHeight;
@@ -34,19 +32,8 @@ nav.addEventListener('click', event => {
   menu.textContent = 'Menu';
 });
 
-document.querySelectorAll('[data-slide]').forEach(button => {
-  button.addEventListener('click', () => {
-    const number = String(button.dataset.slide).padStart(2, '0');
-    dialogImage.src = `assets/slides/${number}.png`;
-    dialogImage.alt = document.querySelector(`#title-${button.dataset.slide}`).textContent;
-    dialog.showModal();
-  });
-});
-dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
-dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
-
 // A slide clip and the complete walkthrough can both be on the page. Keep one
-// narration active at a time, and stop a clip when its panel is collapsed.
+// narration active at a time.
 document.querySelectorAll('video').forEach(video => {
   video.addEventListener('play', () => {
     document.querySelectorAll('video').forEach(other => {
@@ -54,8 +41,12 @@ document.querySelectorAll('video').forEach(video => {
     });
   });
 });
-document.querySelectorAll('.slide-recording').forEach(details => {
-  details.addEventListener('toggle', () => {
-    if (!details.open) details.querySelector('video').pause();
-  });
+
+document.querySelectorAll('.slide-player').forEach(player => {
+  const video = player.querySelector('video');
+  const button = player.querySelector('.slide-play');
+  button.addEventListener('click', () => video.play());
+  video.addEventListener('play', () => player.classList.add('is-playing'));
+  video.addEventListener('pause', () => player.classList.remove('is-playing'));
+  video.addEventListener('ended', () => player.classList.remove('is-playing'));
 });

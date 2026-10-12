@@ -1,6 +1,6 @@
 # AI Powered Agent — assessment walkthrough
 
-This GitHub Pages site presents Bala Manoghar Mathavy’s V2 assessment deck. It begins with a contents section and two complete, self-narrated videos. The 17 presented slides follow in order, each with its corresponding recording. Eight hidden reference slides appear in the technical appendix. Two redacted sample PDF exports close the page.
+This GitHub Pages site presents Bala Manoghar Mathavy’s V2 assessment deck. It begins with a contents section and two complete, self-narrated videos. The 17 presented slides follow in order as playable videos, with each slide shown as its cover. Eight hidden reference slides appear in the technical appendix. Two redacted sample PDF exports close the page.
 
 The source PowerPoint, high-resolution video exports, and unredacted PDFs remain outside this public repository. Only dollar-denominated values were masked in the published PDF copies.
 
