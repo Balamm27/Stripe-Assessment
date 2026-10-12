@@ -1,13 +1,13 @@
-# AI Powered Agent — scrolling assessment
+# AI Powered Agent — assessment walkthrough
 
-This is the GitHub Pages edition of Bala Manoghar Mathavy’s final assessment deck. The main story preserves all 17 presented slides and both embedded videos. Eight slides hidden in the PowerPoint are available in the optional appendix.
+This GitHub Pages site presents Bala Manoghar Mathavy’s V2 assessment deck. It begins with a contents section and two complete, self-narrated videos. The 17 presented slides follow in order, each with its corresponding recording. Eight hidden reference slides appear in the technical appendix. Two redacted sample PDF exports close the page.
 
-Two Agent UI PDF review copies appear at the end of the site. Only dollar-denominated values are masked; other figures and identifiers remain visible. The source exports are not included in this repository.
+The source PowerPoint, high-resolution video exports, and unredacted PDFs remain outside this public repository. Only dollar-denominated values were masked in the published PDF copies.
 
 ## Build
 
-`build_site.py` reads the saved PowerPoint and rendered slide images from the local workstation. The published site itself requires no build process or JavaScript framework. Its content is in `index.html`, `styles.css`, `app.js`, and `assets/`.
+`build_site.py` assembles `index.html` and `site-data.json` from the prepared assets. The site has no framework or server-side build requirement. The slide PNGs came from the final V2 PowerPoint; the main slide clips were cut using the PowerPoint’s recorded slide timings.
 
 ## Publish
 
-The intended Pages URL is [balamm27.github.io/Stripe-Assessment](https://balamm27.github.io/Stripe-Assessment/). GitHub Pages should publish from `main` at the repository root.
+GitHub Pages publishes from `main` at the repository root: [balamm27.github.io/Stripe-Assessment](https://balamm27.github.io/Stripe-Assessment/).

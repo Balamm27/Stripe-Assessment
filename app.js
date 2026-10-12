@@ -17,12 +17,10 @@ const observer = new IntersectionObserver(entries => {
   for (const entry of entries) {
     if (!entry.isIntersecting) continue;
     entry.target.classList.add('is-visible');
-    if (entry.target.classList.contains('story-panel')) {
-      header.classList.toggle('on-light', entry.target.classList.contains('light'));
-    }
+    header.classList.toggle('on-light', entry.target.classList.contains('light') || entry.target.classList.contains('recordings-section') || entry.target.classList.contains('appendix-section') || entry.target.classList.contains('documents-section'));
   }
 }, { threshold: 0.14, rootMargin: '-14% 0px -35% 0px' });
-document.querySelectorAll('.story-panel').forEach(el => observer.observe(el));
+document.querySelectorAll('.story-panel, .contents-section, .recordings-section, .slides-intro, .appendix-section, .documents-section').forEach(el => observer.observe(el));
 
 menu.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
@@ -46,3 +44,18 @@ document.querySelectorAll('[data-slide]').forEach(button => {
 });
 dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+
+// A slide clip and the complete walkthrough can both be on the page. Keep one
+// narration active at a time, and stop a clip when its panel is collapsed.
+document.querySelectorAll('video').forEach(video => {
+  video.addEventListener('play', () => {
+    document.querySelectorAll('video').forEach(other => {
+      if (other !== video && !other.paused) other.pause();
+    });
+  });
+});
+document.querySelectorAll('.slide-recording').forEach(details => {
+  details.addEventListener('toggle', () => {
+    if (!details.open) details.querySelector('video').pause();
+  });
+});

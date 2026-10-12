@@ -15,8 +15,8 @@
     "A 1,000-character limit hid the schema the agent needed",
     "Test Coverage Matrix",
     "Usage and reliability",
-    "Making the architecture reusable",
-    "What I\u2019d bring to Stripe Finance"
+    "What I\u2019d bring to Stripe Finance",
+    "Making the architecture reusable"
   ],
   "chapters": [
     "Introduction",
@@ -34,8 +34,8 @@
     "What changed",
     "Validation",
     "Observed usage",
-    "Reusable design",
-    "Closing"
+    "Closing",
+    "Supplementary walkthrough"
   ],
   "appendix": [
     "Two skills make setup reusable",
@@ -46,5 +46,23 @@
     "Controls around the agent",
     "How feedback becomes reusable knowledge",
     "Reference: a defined calculation"
+  ],
+  "main_slide_durations_seconds": [
+    35.284,
+    26.003,
+    68.817,
+    25.517,
+    128.483,
+    395.346,
+    58.409,
+    67.575,
+    78.064,
+    69.241,
+    65.375,
+    50.559,
+    75.063,
+    70.641,
+    37.122,
+    64.492
   ]
 }
