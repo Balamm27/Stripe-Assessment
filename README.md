@@ -1,12 +1,12 @@
 # AI Powered Agent — assessment walkthrough
 
-This GitHub Pages site presents Bala Manoghar Mathavy’s V2 assessment deck. It begins with a contents section and two complete, self-narrated videos. The 17 presented slides follow in order as playable videos, with each slide shown as its cover. Eight hidden reference slides appear in the technical appendix. Two redacted sample PDF exports close the page.
+I built this site to present my AI agent assessment. Start with the main recorded walkthrough, then watch the shorter video on making the architecture reusable. You can also play the recording for each slide, explore eight technical appendix slides, and review two redacted sample PDF exports.
 
-The source PowerPoint, high-resolution video exports, and unredacted PDFs remain outside this public repository. Only dollar-denominated values were masked in the published PDF copies.
+The source PowerPoint, high-resolution video exports, and unredacted PDFs remain outside this public repository. I masked dollar-denominated values in the published PDF copies.
 
 ## Build
 
-`build_site.py` assembles `index.html` and `site-data.json` from the prepared assets. The site has no framework or server-side build requirement. The slide PNGs came from the final V2 PowerPoint; the main slide clips were cut using the PowerPoint’s recorded slide timings.
+`build_site.py` assembles `index.html` and `site-data.json` from the prepared assets. The site has no framework or server-side build requirement. I exported the slide images from my final PowerPoint and cut the slide clips using its recorded timings.
 
 ## Publish
 
