@@ -2,7 +2,7 @@
 
 This is the GitHub Pages edition of Bala Manoghar Mathavy’s final assessment deck. The main story preserves all 17 presented slides and both embedded videos. Eight slides hidden in the PowerPoint are available in the optional appendix.
 
-Two redacted Agent UI PDF review copies appear at the end of the site. Numerical values and identifiers are masked; the source exports are not included in this repository.
+Two Agent UI PDF review copies appear at the end of the site. Only dollar-denominated values are masked; other figures and identifiers remain visible. The source exports are not included in this repository.
 
 ## Build
 
